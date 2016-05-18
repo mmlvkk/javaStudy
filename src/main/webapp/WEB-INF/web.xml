@@ -1,0 +1,42 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  
+   <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>CookieSessionTest.test</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>test2</servlet-name>
+    <servlet-class>CookieSessionTest.test2</servlet-class>
+  </servlet>
+  <servlet>
+   
+    <servlet-name>Test</servlet-name>
+    <servlet-class>com.gmail.mmlvkk.servlet.Test</servlet-class>
+  </servlet>
+
+  
+
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/servlet/test</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>test2</servlet-name>
+    <url-pattern>/servlet/test2</url-pattern>
+  </servlet-mapping>	
+  
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/servlet/Test</url-pattern>
+  </servlet-mapping>
+  
+   <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

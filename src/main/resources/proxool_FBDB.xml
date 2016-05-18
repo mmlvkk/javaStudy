@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<something-else-entirely>
+	<proxool>
+		<alias>FBDB</alias>
+		<driver-url>jdbc:oracle:thin:@192.168.3.72:1521:NNDB王康</driver-url>
+		<driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+		<driver-properties>
+			<property name="user" value="sa" />
+			<property name="password" value="topsci" />
+		</driver-properties>
+		<minimum-connection-count>5</minimum-connection-count>
+		<maximum-connection-count>20</maximum-connection-count>
+		<house-keeping-test-sql>select sysdate from dual
+		</house-keeping-test-sql>
+		<fatal-sql-exception>FatalSQLException</fatal-sql-exception>
+		<fatal-sql-exception-wrapper-class>org.logicalcobwebs.proxool.FatalSQLException
+		</fatal-sql-exception-wrapper-class>
+		<maximum-connection-lifetime>1800000</maximum-connection-lifetime>
+		<statistics>30s,1m,1d</statistics>
+	</proxool>
+</something-else-entirely>
